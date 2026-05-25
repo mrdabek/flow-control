@@ -32,20 +32,18 @@ class Program
                 case "1":
                     Console.WriteLine("Ange din ålder: ");
                     int age = int.Parse(Console.ReadLine());
-                    if(age < 20)
-                {
-                    Console.WriteLine("Ungdomspris: 80kr");
-                }
-                    else if (age > 64)
+                    if (age < 5 || age > 100)
                     {
+                        Console.WriteLine("Fri entré");
+                    }
+                    else if(age < 20) 
+                    { 
+                        Console.WriteLine("Ungdomspris: 80kr"); 
+                    }
+                    else if (age > 64)
+                    { 
                         Console.WriteLine("Pensionärspris: 90kr");
                     }
-                    // didn't work must work more on that
-                    
-                    // else if (age < 5 && age > 100)
-                    // {
-                    //     Console.WriteLine("Fri entre.");
-                    // }
                     else
                     {
                         Console.WriteLine("Standardpris: 120kr");
@@ -54,6 +52,8 @@ class Program
                 
                 case "2":
                     Console.WriteLine("Gruppbilljet: Ange antal personer");
+                    int peopleAmount = int.Parse(Console.ReadLine());
+                    
                     break;
 
 
