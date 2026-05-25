@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/marcindabek/repos/ConsoleApp1-test/ConsoleApp1-test/ConsoleApp1-test.csproj",
-      "projectName": "ConsoleApp1-test",
-      "projectPath": "/Users/marcindabek/repos/ConsoleApp1-test/ConsoleApp1-test/ConsoleApp1-test.csproj",
+      "projectUniqueName": "/Users/marcindabek/repos/BioBioApp/BioBioApp/BioBioApp.csproj",
+      "projectName": "BioBioApp",
+      "projectPath": "/Users/marcindabek/repos/BioBioApp/BioBioApp/BioBioApp.csproj",
       "packagesPath": "/Users/marcindabek/.nuget/packages/",
-      "outputPath": "/Users/marcindabek/repos/ConsoleApp1-test/ConsoleApp1-test/obj/",
+      "outputPath": "/Users/marcindabek/repos/BioBioApp/BioBioApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/marcindabek/.nuget/NuGet/NuGet.Config"

@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1_test;
+﻿namespace BioBioApp;
 
 class Program
 {
