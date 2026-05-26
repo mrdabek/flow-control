@@ -82,7 +82,7 @@ class Program
                             else
                             {
                                 totalPrice += 120;
-                            }
+                            }       
                         }
                     }
                     else
