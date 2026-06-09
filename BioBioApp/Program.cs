@@ -1,4 +1,5 @@
-﻿namespace BioBioApp;
+﻿using BioBioApp.Methods
+namespace BioBioApp;
 
 class Program
 {
@@ -15,7 +16,6 @@ class Program
             Console.WriteLine("1 - Typ av billjet - Ungdom, Standard, Pensionär. Ange ålder så väljer vi rätt alternativ.");
             Console.WriteLine("2 - Gruppbilljet - Ange ålder och antal personer så räknar vi.");
             Console.WriteLine("3 - Upprepa Tio Gånger");
-            Console.WriteLine();
             Console.WriteLine("4 - Det Tredje Ordet");
             Console.WriteLine();
             Console.WriteLine("0 - Avsluta programmet");
@@ -44,7 +44,7 @@ class Program
                 
                 case "4":
                     ThirdWord();
-                
+                    break;
                 default:
                     Console.WriteLine("Felaktig input.");
                     break;
@@ -52,7 +52,7 @@ class Program
         }    
     }
 
-    static void HandleSingleTicket()
+    private static void HandleSingleTicket()
     {
         Console.WriteLine("Ange din ålder: ");
         if (int.TryParse(Console.ReadLine(), out int age))
@@ -81,7 +81,7 @@ class Program
         }
     }
 
-    static void HandleGroupTicket()
+    private static void HandleGroupTicket()
     {
         Console.WriteLine("Gruppbilljet: Hur många är ni?");
         
@@ -110,7 +110,7 @@ class Program
         
     }
 
-    static int GetTicketPrice(int age)
+    private static int GetTicketPrice(int age)
     {
         if (age < 5 || age > 100)
             return 0;
@@ -124,7 +124,7 @@ class Program
         return 120;
     }
 
-    static void RepeatTenTimes()
+    private static void RepeatTenTimes()
     {
         Console.WriteLine("Ange text: ");
         string text = Console.ReadLine();
@@ -133,5 +133,12 @@ class Program
             Console.Write($"{i}. {text} ");
         }
     }
-    
+
+    private static void ThirdWord()
+    {
+        Console.WriteLine("Ange en mening med minst 3 ord: ");
+        var text = Console.ReadLine();
+        string[] ord = text.Split();
+        Console.WriteLine($"Tredje order ar {ord[2]}");
+    }
 }
