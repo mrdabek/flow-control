@@ -9,16 +9,17 @@ class Program
         while (programRunning)
         {
             Console.WriteLine();
-            Console.WriteLine("=== HUVUDMENY ===");
-            Console.WriteLine();
-            Console.WriteLine("Skriv en siffra för att välja funktion.");
-            Console.WriteLine("1 - Typ av billjet - Ungdom, Standard, Pensionär. Ange ålder så väljer vi rätt alternativ.");
-            Console.WriteLine("2 - Gruppbilljet - Ange ålder och antal personer så räknar vi.");
-            Console.WriteLine("3 - Upprepa Tio Gånger");
-            Console.WriteLine("4 - Det Tredje Ordet");
-            Console.WriteLine();
-            Console.WriteLine("0 - Avsluta programmet");
-            Console.WriteLine();
+            Console.WriteLine("╔══════════════════════════════════════════════════════════════════════════╗");
+            Console.WriteLine("║ === === === HUVUDMENY === === ===                                        ║");                                                    
+            Console.WriteLine("║                                                                          ║");                                                                        
+            Console.WriteLine("║ Skriv en siffra för att välja funktion.                                  ║");                              
+            Console.WriteLine("║ 1 - Enkelbilljet - Ange ålder så väljer vi rätt alternativ.              ║");          
+            Console.WriteLine("║ 2 - Gruppbilljet - Ange ålder och antal personer så räknar vi.           ║");       
+            Console.WriteLine("║ 3 - Upprepa Tio Gånger                                                   ║");                                               
+            Console.WriteLine("║ 4 - Det Tredje Ordet                                                     ║");
+            Console.WriteLine("║                                                                          ║");
+            Console.WriteLine("║ 0 - Avsluta programmet                                                   ║");
+            Console.WriteLine("╚══════════════════════════════════════════════════════════════════════════╝");
 
             string input = Console.ReadLine();
 
